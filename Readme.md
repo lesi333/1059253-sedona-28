@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Алеся Волкова](https://up.htmlacademy.ru/htmlcss/28/user/1059253).
-* Наставник: [Виктор Кан].
+* Наставник: [Виктор Кан](https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
