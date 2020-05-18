@@ -19,7 +19,49 @@
      </nav>
    </header>
    <main>
+      <section class="filters">
+       <!--Позднее здесь будет форма поиска гостиницы в Седоне с фильтрами по инфраструктуре, типу жилья и стоимости проживания в сутки-->
+       <div class="filter-infrastructure">
+        <h3>Инфраструктура:</h3>
+        <span>Бассейн</span>
+        <span>Парковка</span>
+        <span>Wi-Fi</span>
+       </div>
+       <div class="filter-housing-type">
+        <h3>Тип жилья:</h3>
+        <span>Гостиница</span>
+        <span>Мотель</span>
+        <span>Апартаменты</span>
+       </div>
+       <div class="filter-cost">
+        <h3>Стоимость в сутки (p):</h3>
+        <span>От 0</span>
+        <span>До 3000</span>
+        <span>Апартаменты</span>
+       </div>
+       <!--Позднее здесь будет форма c кнопкой для отправки данных по заданным фильтрам-->
+       <button type="button">Показать</button>
+      </section>
       <section class="results-search">
+        <div class="results-search-find">
+           <h4 class="visually-hidden">Результаты поиска</h4>
+           <span>Найдено 3:</span>
+           <span>Сортировка:</span>
+            <ul>
+             <li><a href="">По цене</a></li>
+             <li><a href="">По типу</a></li>
+             <li><a href="">По рейтингу</a></li>
+            </ul>
+        </div>
+        <div class="sorting">
+           <h4 class="visually-hidden">Результаты сортировки по возрастанию и убыванию</h4>
+           <button class="top" type="button">
+           <!--Позднее здесь будет svg-изображение для фильтра сортировки--> 
+           <span>&#9650;</span>
+           <button class="bottom" type="button">
+           <!--Позднее здесь будет svg-изображение для фильтра сортировки--> 
+           <span>&#9660;</span>
+        </div>
         <ul>
          <li>
            <h3>
@@ -38,10 +80,11 @@
            </div> 
            <div class="rating-hotel">
              <div class="rating-stars">
-              <span>&#9733;</span>
-              <span>&#9733;</span>
-              <span>&#9733;</span>
-              <span>&#9733;</span>
+               <!--Позднее здесь будет svg-изображение для рейтинга гостиницы--> 
+               <span>&#9733;</span>
+               <span>&#9733;</span>
+               <span>&#9733;</span>
+               <span>&#9733;</span>
              </div>
              <p>Рейтинг: 8,5</p> 
            </div>
@@ -63,6 +106,7 @@
             </div> 
             <div class="rating-hotel">
              <div class="rating-stars">
+               <!--Позднее здесь будет svg-изображение для рейтинга гостиницы--> 
                <span>&#9733;</span>
                <span>&#9733;</span>
                <span>&#9733;</span>
@@ -87,6 +131,7 @@
             </div> 
             <div class="rating-hotel">
              <div class="rating-stars">
+                <!--Позднее здесь будет svg-изображение для рейтинга гостиницы--> 
                 <span>&#9733;</span>
                 <span>&#9733;</span>
              </div>
