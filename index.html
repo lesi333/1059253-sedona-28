@@ -97,9 +97,32 @@
         <h3>Заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки,
            и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+         <a href="#">Поиск гостиницы в Седоне</a>  
       </section>
       <section class="search">
-       <!--Здесь будет форма поиска гостиницы в Седоне-->
+        <form action="https://echo.htmlacademy.ru/" method="POST">
+          <div class="search-date">
+           <label for="date-of-arrival">Дата заезда:</label>
+           <input id="date-of-arrival" type="text" name="date-of-arrival" value="24 апреля 2017" required>
+          </div>
+          <div class="search-date">
+           <label for="date-of-departure">Дата выезда:</label>
+           <input id="date-of-departure" type="text" name="date-of-departure" value="4 июля 2017" required>
+          </div>
+          <div class="search-person">
+           <label for="adult">Взрослые:</label>
+           <button type="button" aria-label="Убрать одного взрослого">-</button>
+           <input id="adult" type="text" name="adult" value="2">
+           <button type="button" aria-label="Добавить одного взрослого">+</button>
+          </div>
+          <div class="search-person">
+           <label for="children">Дети:</label>
+           <button type="button" aria-label="Убрать одного ребёнка">-</button>
+           <input id="children" type="text" name="children" value="0">
+           <button type="button" aria-label="Добавить одного ребёнка">+</button>
+          </div>
+          <button type="submit">Найти</button>
+        </form>
        <div class="map">
         <img src="img/map.jpg" width="1199" height="594" alt="Карта города Седоны">
        </div>  
@@ -123,7 +146,7 @@
       </div>
       <div class="developer">
         <span>website by</span>
-        <a href="https://htmlacademy.ru/">
+        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML и CSS. Профессиональная вёрстка сайтов">
             <img src="img/logo-htmlacademy.svg"  width="115" height="41" alt="Логотип HTML Academy">
         </a>
       </div>
