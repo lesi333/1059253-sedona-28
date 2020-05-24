@@ -20,27 +20,58 @@
    </header>
    <main>
       <section class="filters">
-       <!--Позднее здесь будет форма поиска гостиницы в Седоне с фильтрами по инфраструктуре, типу жилья и стоимости проживания в сутки-->
-       <div class="filter-infrastructure">
-        <h3>Инфраструктура:</h3>
-        <span>Бассейн</span>
-        <span>Парковка</span>
-        <span>Wi-Fi</span>
-       </div>
-       <div class="filter-housing-type">
-        <h3>Тип жилья:</h3>
-        <span>Гостиница</span>
-        <span>Мотель</span>
-        <span>Апартаменты</span>
-       </div>
-       <div class="filter-cost">
-        <h3>Стоимость в сутки (p):</h3>
-        <span>От 0</span>
-        <span>До 3000</span>
-        <span>Апартаменты</span>
-       </div>
-       <!--Позднее здесь будет форма c кнопкой для отправки данных по заданным фильтрам-->
-       <button type="button">Показать</button>
+       <h3 class="visually-hidden">Параметры поиска гостиницы в Седоне</h3>
+       <form action="https://echo.htmlacademy.ru/" method="GET">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li>
+              <input id="filter-pool" type="checkbox" name="pool" checked>
+              <label for="filter-pool">Бассейн</label>
+            </li>
+            <li>
+              <input id="filter-parking" type="checkbox" name="parking">
+              <label for="filter-parking">Парковка</label>
+            </li>
+            <li>
+              <input id="filter-internet" type="checkbox" name="internet">
+              <label for="filter-internet">Wi-Fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li>
+              <input id="filter-hotel" type="checkbox" name="hotel" checked>
+              <label for="filter-hotel">Гостиница</label>
+            </li>
+            <li>
+              <input id="filter-motel" type="checkbox" name="motel" checked>
+              <label for="filter-motel">Мотель</label>
+            </li>
+            <li>
+              <input id="filter-apartments" type="checkbox" name="apartments" checked>
+              <label for="filter-apartments">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость в сутки (p):</legend>
+          <div class="filter-cost">
+           <label for="filter-min-cost">От</label>
+           <input id="filter-min-cost" type="text" name="min-cost" value="0">
+           <label for="filter-max-cost">До</label>
+           <input id="filter-max-cost" type="text" name="max-cost" value="3000">
+          </div>
+          <div class="range-cost">
+            <!--Позднее здесь с помощью CSS можно отрисовать шкалу ранжирования-->
+            <span class="range-min-cost">Минимальный диапозон</span>
+            <span class="range-max-cost">Максимальный диапозон</span>
+          </div>  
+          <button type="submit">Показать</button>
+        </fieldset>
+       </form>
       </section>
       <section class="results-search">
         <div class="results-search-find">
@@ -48,14 +79,14 @@
            <span>Найдено: 3</span>
            <span>Сортировка:</span>
             <ul>
-             <li><a href="">По цене</a></li>
-             <li><a href="">По типу</a></li>
-             <li><a href="">По рейтингу</a></li>
+             <li><a href="#">По цене</a></li>
+             <li><a href="#">По типу</a></li>
+             <li><a href="#">По рейтингу</a></li>
             </ul>
-            <a href="">По возрастанию
+            <a href="#">По возрастанию
               <!--Позднее здесь будет svg-изображение для фильтра сортировки (top)--> 
             </a>
-            <a href="">По убыванию
+            <a href="#">По убыванию
               <!--Позднее здесь будет svg-изображение для фильтра сортировки (bottom)--> 
             </a> 
         </div>
