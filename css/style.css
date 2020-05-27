@@ -24,7 +24,7 @@
 /* Global */
 
 body {
-  min-width: 1200px;
+  width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", sans-serif;
@@ -251,12 +251,12 @@ color: var(--basic-black);
 }
 
 
-.bm a:hover,
-.bm a:focus {
+.button-more-book a.button-more:hover,
+.button-more-book a.button-more:focus {
  background-color: var(--basic-blue);
 }
 
-.bm a:active {
+.button-more-book a.button-more:active {
  background-color: var(--basic-dark-blue);
  color: rgba(255, 255, 255, 0.3);
 }
@@ -268,12 +268,12 @@ color: var(--basic-black);
  }
 
 
- .bb a:hover,
- .bb a:focus {
+ .button-more-book a.button-book:hover,
+ .button-more-book a.button-book:focus {
   background-color: var(--basic-brown);
 }
 
-.bb a:active {
+.button-more-book a.button-book:active {
   background-color: var(--basic-dark-brown);
   color: rgba(255, 255, 255, 0.3);
 }
