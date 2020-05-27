@@ -1,0 +1,287 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-extra-black: #333333;
+  --basic-white: #FFFFFF;
+  --basic-dark-blue: #5496BD;
+  --basic-blue: #669EC0;
+  --basic-light-blue: #81B3D2;
+  --basic-dark-brown: #503E33;
+  --basic-brown: #604E43;
+  --basic-light-brown: #766357;
+  --basic-extra-gray:  #666666;
+  --basic-dark-gray: #A9A9A9;
+  --basic-gray: #EBEBEB;
+  --basic-light-gray: #F2F2F2;
+  --special-coll-blue:  e6f3fa;
+  --special-dark-gray: #6A6A6A;
+  --special-gray: #ABABAB;
+  --special-black: #231F20;
+ 
+}
+
+/* Global */
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-weight: 700;
+  background-color: var(--basic-white);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+/* User navigation */
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: var(--basic-light-blue);
+}
+
+.site-navigation a:active {
+  opacity: 0.3;
+}
+
+.site-navigation .page-active {
+  color: var(--basic-light-brown);
+}
+
+/* Main Index */
+
+.visually-hidden {
+visibility: hidden;
+}
+
+.welcome {
+  background-color: var(--special-coll-blue);
+  background-image: url("../img/background photo.jpg");
+  background-repeat: no-repeat;
+}
+
+.info-city {
+  background-color: var(--basic-white);
+}
+
+.info-description {
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.info-reason {
+  text-align: center;
+  color: var(--basic-extra-black);
+}
+
+.interesting {
+  background-color: var(--basic-white); 
+}
+
+.interesting-now {
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.interesting-search {
+  line-height: 24px;
+  text-align: center;
+}
+
+/* Main Index Button */
+
+.button{
+  font: inherit;
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--basic-light-brown);
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--basic-brown);
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: var(--basic-dark-brown);
+  
+}
+
+/* Main Index Form */
+
+.search {
+  display: none;
+}
+
+/* Main Footer Index*/
+
+.main-footer {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-tag-tel {
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+
+}
+
+.tag a {
+  color: var(--basic-black);
+}
+
+.contact-social ul {
+  list-style: none;
+}
+
+.social-button {
+  background-color: var(--basic-light-blue);
+}
+
+.twitter-button {
+  background-image: url("../img/twitter.svg");
+  background-repeat: no-repeat;
+}
+
+.facebook-button {
+  background-image: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.youtube-button {
+  background-image: url("../img/youtube.svg");
+  background-repeat: no-repeat;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-blue);
+}
+
+.social-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: var(--basic-dark-blue);
+}
+
+.developer-logo {
+  color: var(--special-black);
+}
+
+/*
+.developer a:hover,
+.developer a:focus {
+  color: var(--basic-light-blue);
+}
+
+.developer a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+*/
+
+
+/* Main Hotels */
+
+.hotels-list {
+  list-style: none;
+}
+
+.name-hotel a {
+font-size: 21px;
+font-weight: 700;
+color: var(--basic-black); 
+}
+
+.name-hotel a:hover,
+.name-hotel a:focus {
+  color: var(--basic-light-blue);
+}
+
+.name-hotel a:active {
+  opacity: 0.3;
+}
+
+.info-type-price span {
+  line-height: 21px;
+}
+.button-more-book a{
+  line-height: 21px;
+  font-weight: 700;
+
+}
+.button-more-book .button-more {
+  color: var(--basic-white);
+  background-color: var(--basic-light-blue);
+  border: none;
+}
+
+
+.bm a:hover,
+.bm a:focus {
+ background-color: var(--basic-blue);
+}
+
+.bm a:active {
+ background-color: var(--basic-dark-blue);
+ color: rgba(255, 255, 255, 0.3);
+}
+
+.button-more-book .button-book {
+  color: var(--basic-white);
+  background-color: var(--basic-light-brown);
+  border: none;
+ }
+
+
+ .bb a:hover,
+ .bb a:focus {
+  background-color: var(--basic-brown);
+}
+
+.bb a:active {
+  background-color: var(--basic-dark-brown);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.rating-value {
+  width: 110px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--basic-extra-gray);
+  background-color: var(--basic-light-gray);
+}

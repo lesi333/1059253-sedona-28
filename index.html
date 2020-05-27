@@ -3,18 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
-   <header>
-     <nav>
-      <ul>
+   <header class="main-header">
+     <nav class="main-navigation">
+      <ul class="site-navigation">
         <li><a href="blank.html">Информация</a></li>
         <li><a href="blank.html">Фото и видео</a></li>
         <li><a href="blank.html">Карта штата</a></li>
         <li><a href="hotels.html">Гостиницы</a></li>
       </ul>
-      <a>
+      <a class="main-header-logo">
         <img src="img/logo.svg" width="138" height="70" alt="Логотип города Седона">
       </a>
      </nav>
@@ -25,9 +28,9 @@
         <p><img src="img/welcome.svg" width="456.65" height="350.88" alt="Добро пожаловать в Седону"><p>
       </section>
       <section class="info-city">
-        <h2>Седона — небольшой городок в Аризоне,
+        <h2 class="info-description">Седона — небольшой городок в Аризоне,
             заслуживающий большего!</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <p class="info-reason">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
       <section class="about-city">
         <div class="about-city-color">
@@ -94,10 +97,10 @@
         </div>
       </section>
       <section class="interesting">
-        <h3>Заинтересовались?</h3>
-        <p>Укажите предполагаемые даты поездки,
+        <h3 class="interesting-now">Заинтересовались?</h3>
+        <p class="interesting-search">Укажите предполагаемые даты поездки,
            и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-         <a href="#">Поиск гостиницы в Седоне</a>  
+         <a class="button" href="#">Поиск гостиницы в Седоне</a>  
       </section>
       <section class="search">
         <form action="https://echo.htmlacademy.ru/" method="POST">
@@ -123,12 +126,12 @@
           </div>
           <button type="submit">Найти</button>
         </form>
-       <div class="map">
-        <img src="img/map.jpg" width="1199" height="594" alt="Карта города Седоны">
-       </div>  
       </section>
+      <div class="map">
+        <img src="img/map.jpg" width="1199" height="594" alt="Карта города Седоны">
+      </div>  
     </main>
-    <footer>
+    <footer class="main-footer">
       <div class="contact-tag-tel">
         <div class="tag">
           <a href="#">#visitsedona</a>
@@ -139,15 +142,15 @@
       </div>
       <div class="contact-social">
          <ul>
-           <li><a href="#">Твиттер</a></li>
-           <li><a href="#">Фейсбук</a></li>
-           <li><a href="#">Ютуб</a></li>
+           <li><a class="social-button twitter-button" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+           <li><a class="social-button facebook-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+           <li><a class="social-button youtube-button" href="#"><span class="visually-hidden">Ютуб</span></a></li>
          </ul>
       </div>
       <div class="developer">
         <span>website by</span>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML и CSS. Профессиональная вёрстка сайтов">
-            <img src="img/logo-htmlacademy.svg"  width="115" height="41" alt="Логотип HTML Academy">
+        <a class="developer-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML и CSS. Профессиональная вёрстка сайтов">
+           <img src="img/logo-htmlacademy.svg"  width="115" height="41" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer> 
