@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -7,37 +7,39 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
-   <header class="main-header">
+  <body class="page-body">
+   <div class="main-container"> 
+    <header class="main-header">
      <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li><a class="page-active" href="blank.html">Информация</a></li>
-        <li><a href="blank.html">Фото и видео</a></li>
-        <li><a href="blank.html">Карта штата</a></li>
-        <li><a href="hotels.html">Гостиницы</a></li>
-      </ul>
-      <a class="main-header-logo">
+         <ul class="site-navigation">
+           <li><a class="page-active" href="blank.html">Информация</a></li>
+           <li><a href="blank.html">Фото и видео</a></li>
+           <li><a href="blank.html">Карта штата</a></li>
+           <li><a href="hotels.html">Гостиницы</a></li>
+         </ul>
+       <a class="main-header-logo">
         <img src="img/logo.svg" width="138" height="70" alt="Логотип города Седона">
-      </a>
+       </a>
      </nav>
     </header>
     <main>
       <section class="welcome">
         <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-        <p><img src="img/welcome.svg" width="456.65" height="350.88" alt="Добро пожаловать в Седону"><p>
+        <p class="welcome-picture"><img src="img/welcome.svg" width="456.65" height="350.88" alt="Добро пожаловать в Седону"></p>
       </section>
       <section class="info-city">
-        <h2 class="info-description">Седона — небольшой городок в Аризоне,
+        <div class="zigzag">
+         <h2 class="info-description">Седона — небольшой городок в Аризоне,
             заслуживающий большего!</h2>
-        <p class="info-reason">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+         <p class="info-reason">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </div> 
       </section>
       <section class="about-city">
         <div class="about-city-color">
-         <h2>Настоящий
+         <h2 class="about-life">Настоящий
              городок</h2>
          <span>- №1 -</span>
-         <p>Седона - не аттракцион для туристов, там
+         <p class="life">Седона - не аттракцион для туристов, там
             течёт своя жизнь</p>
         </div> 
         <div class="about-city-view">
@@ -48,7 +50,7 @@
         <div class="about-residence">
           <h2>Жильё</h2>
           <p>Рекомендуем пожить в настоящем
-             мотеле, всё как в кино!</p>
+             мотеле, всё как в кино!</p>   
         </div>
         <div class="about-food">
           <h2>Еда</h2>
@@ -62,15 +64,15 @@
         </div>
       </section>
       <section class="about-city">
+        <div class="about-city-view">
+          <img src="img/image-2.jpg" width="800" height="256" alt="Вид на мост Дьявола">
+        </div>
         <div class="about-city-color">
-         <h2>Там есть
+         <h2 class="about-bridge">Там есть
              мост дьявола</h2>
          <span>- №2 -</span>
-         <p>Да, по нему можно пройти! Если конечно
+         <p class="bridge">Да, по нему можно пройти! Если конечно
             Вы осмелитесь</p>
-        </div>
-        <div class="about-city-view">
-         <img src="img/image-2.jpg" width="800" height="256" alt="Вид на мост Дьявола">
         </div>
       </section>
       <section class="about-city-feature">
@@ -78,27 +80,27 @@
          <h2>Небольшая
              площадь</h2>
          <span>- №3 -</span>
-         <p>Все достопримечательности
+         <p class="about-city-square">Все достопримечательности
             находятся очень близко</p>
         </div>
         <div class="about-city-not-color">
          <h2>Красивая
              дорога</h2>
          <span>- №4 -</span>
-         <p>Ехать в Седону из Лас-Вегаса совсем
+         <p class="about-city-vegas">Ехать в Седону из Лас-Вегаса совсем
             не скучно!</p>
         </div>
         <div class="about-city-not-color">
          <h2>Мало
              туристов</h2>
          <span>- №5 -</span>
-         <p>Большинство едет в Гранд Каньон
+         <p class="about-city-grand">Большинство едет в Гранд Каньон
             и толпится там</p>
         </div>
       </section>
       <section class="interesting">
         <h3 class="interesting-now">Заинтересовались?</h3>
-        <p class="interesting-search">Укажите предполагаемые даты поездки,
+        <p class="interesting-search">Укажите предполагаемые даты поездки,<br> 
            и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
          <a class="button" href="#">Поиск гостиницы в Седоне</a>  
       </section>
@@ -141,18 +143,19 @@
         </div>
       </div>
       <div class="contact-social">
-         <ul>
+         <ul class="social-list">
            <li><a class="social-button twitter-button" href="#"><span class="visually-hidden">Твиттер</span></a></li>
            <li><a class="social-button facebook-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
            <li><a class="social-button youtube-button" href="#"><span class="visually-hidden">Ютуб</span></a></li>
          </ul>
       </div>
       <div class="developer">
-        <span>website by</span>
+        <span class="by">website by</span>
         <a class="developer-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML и CSS. Профессиональная вёрстка сайтов">
            <img src="img/logo-htmlacademy.svg"  width="115" height="41" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer> 
+   </div> 
   </body>
 </html>
