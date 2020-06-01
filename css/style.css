@@ -46,50 +46,55 @@ img {
   height: auto;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 /* Сетка */
 
 .page {
   height: 100%;
 }
 
-.page-body {
-  min-height: 100%;
+.main-container {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-}
-
-.main-container {
-	width: 1200px;
+  width: 1200px;
+  min-height: 100%;
 	margin: 0 auto;
   padding: 0;
   background-color: var(--basic-white);
+  box-shadow: 2px 0px 33px -9px rgba(0,0,0,0.75);
 }
-
 
 /* Main navigation */
 
 .main-navigation {
   font-weight: 700;
   background-color: var(--basic-white);
+  position: relative;
 }
 
 .site-navigation {
   display: flex;
   margin: 0;
-  padding: 0;
- /* outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;*/
+  padding: 15px 72px;
 }
 
-.site-navigation li{
+.site-navigation li {
   list-style: none;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.site-navigation li:first-child {
-  margin-left: 72px;
 }
 
 .site-navigation li:nth-child(2) {
@@ -97,7 +102,7 @@ img {
 }
 
 .site-navigation li:nth-child(3) {
-  margin-left: 418px;
+  margin-left: auto;
 }
 
 .site-navigation li:last-child {
@@ -105,10 +110,10 @@ img {
 }
 
 a.main-header-logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: -56px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* User navigation */
@@ -132,23 +137,19 @@ a.main-header-logo {
 
 /* Main Index */
 
-.visually-hidden {
-visibility: hidden;
-}
-
 .welcome {
   background-color: var(--special-coll-blue);
   background-image: url("../img/background photo.jpg");
   background-repeat: no-repeat;
-  padding-bottom: 80.76px;
-  margin-top:-34px;
+  padding-top: 77.35px;
+  padding-bottom: 71.76px;
   padding-left: 371px;
   padding-right: 371px;
 }
 
-.welcome-picture {
-  display: flex;
-  margin-top: 42.5px;
+p.welcome-picture {
+  padding-bottom: 0;
+  margin: 0;
 }
 
 .info-city {
@@ -159,21 +160,23 @@ visibility: hidden;
   margin: 0;
 }
 
+/*
 .zigzag {
   background-image: url("../img/intro-mask.svg");
 }
+*/
 
-.info-description {
+.info-city .info-description {
+  display: inline-block;
   font-size: 21px;
   font-weight: 700;
   text-align: center;
-}
-
-.info-city .info-description {
+  padding-bottom: 32px;
+  padding-top: 42.5px;
+  margin: 0;
+  margin-bottom: 16.5px;
   margin-left: 365px;
   margin-right: 365px;
-  padding-bottom: 32px;
-  margin-top: 41.5px;
 }
 
 .info-reason {
@@ -182,10 +185,8 @@ visibility: hidden;
 }
 
 .info-city .info-reason {
- margin-top: 16.5px;
- margin-left: 340px;
- margin-right: 341px;
-margin-bottom: 51px;
+  margin: 0;
+  margin-bottom: 51px;
 }
 
 .interesting {
@@ -212,45 +213,46 @@ margin-bottom: 51px;
   padding: 0; 
 }
 
-.about-city-color h2 {
-  font-size: 21px;
-  font-weight: 700;
+.about-city-color {
+  width: 400px;
+  color: var(--basic-white);
+  background-color: var(--basic-light-blue);
+  line-height: 21px;
+  text-align: center;
+  padding-top: 47px;
+  padding-right: 51px;
+  padding-bottom: 54px;
+  padding-left: 52px;
 }
 
 .about-city-color h2.about-life {
-  min-width: 122px;
-  margin-right: 139px;
-  margin-left: 139px;
-  margin-top: 47px;
+  width: 122px;
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0 auto;
+  margin-bottom: 25px;
 }
 
 .about-city-color h2.about-bridge {
-  min-width: 151px;
-  margin-right: 125px;
-  margin-left: 126px;
-  margin-top: 50px;
-}
-
-.about-city-color span {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 25px;
-  margin-bottom: 23px;
+  width: 151px;
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0 auto;
+  margin-bottom: 25px;
 }
 
 .about-city-color p.life {
-  min-width: 299px;
-  margin-bottom: 54px;
-  margin-left: 52px;
-  margin-right: 51px;
+  margin-top: 23px;
+  margin-bottom: 0;
 }
 
 .about-city-color p.bridge {
-  min-width: 301px;
-  margin-bottom: 51px;
-  margin-left: 50px;
-  margin-right: 49px;
+  margin-top: 23px;
+  margin-bottom: 0;
+}
+
+.about-city-view {
+  display: flex;
 }
 
 
@@ -264,47 +266,126 @@ margin-bottom: 51px;
 .about-residence h2,
 .about-food h2,
 .about-souvenir h2 {
-  margin-top: 160px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding-top: 160px;
 }
+
+.about-residence,
+.about-food,
+.about-souvenir {
+  padding-bottom: 82px;
+} 
 
 .about-residence p {
   display: inline-block;
   width: 254px;
-  margin-top: 25px;
-  margin-bottom: 82px;
+  margin: 0;
 }
 
 .about-food p {
   display: inline-block;
   width: 297px;
-  margin-top: 25px;
-  margin-bottom: 82px;
+  margin: 0;
 }
 
 .about-souvenir p {
   display: inline-block;
   width: 270px;
-  margin-top: 25px;
-  margin-bottom: 82px;
-}
-
-.about-city-color {
-  width: 400px;
-  color: var(--basic-white);
-  background-color: var(--basic-light-blue);
-  line-height: 21px;
-  text-align: center;
+  margin: 0;
 }
 
 .about-city-feature {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 0;
   padding: 0;
 }
 
-.about-city-not-color h2 {
-  margin-top: 47px;
+.about-city-not-color {
+  padding-top: 47px;
+  padding-bottom: 54px;
+}
+
+.about-city-feature h2 {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 21px;
+  font-weight: 700;
+ }
+
+ .about-city-not-color .square {
+  margin-bottom: 25px;
+  width: 119px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-city-not-color .road {
+  margin-bottom: 25px;
+  width: 99px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-city-not-color .tourists {
+  margin-bottom: 25px;
+  width: 98px;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+p.about-city-square {
+  width: 209px;
+  margin-top: 23px;
+  margin-bottom: 0;
+} 
+
+p.about-city-vegas {
+  width: 261px;
+  margin-top: 23px;
+  margin-bottom: 0;
+} 
+
+p.about-city-grand {
+  width: 247px;
+  margin-top: 23px;
+  margin-bottom: 0;
+} 
+
+.infrastructure {
+  background-color: var(--basic-white);
+  text-align: center;
+  line-height: 21px;
+}
+
+.infrastructure h2 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.infrastructure p {
+  color: var(--basic-extra-black);
+}
+
+.about-city-feature {
+  background-color: var(--basic-natural);
+  text-align: center;
+  line-height: 21px;
+}
+
+.about-city-feature h2 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.about-city-feature p {
+  color: var(--basic-extra-black);
+}
+
+.about-city-feature span {
+  color: var(--basic-extra-black);
 }
 
 .interesting {
@@ -324,63 +405,6 @@ margin-bottom: 51px;
   width: 435px;
   padding-bottom: 51px;
   margin: 0;
-}
-
-.about-city-not-color span {
-  margin-top: 25px;
-}
-
-.about-city-square {
-  width: 208px;
-  margin-top: 23px;
-  margin-bottom: 54px;
-} 
-
-.about-city-vegas {
-  width: 261px;
-  margin-top: 23px;
-  margin-bottom: 54px;
-} 
-
-.about-city-grand {
-  width: 247px;
-  margin-top: 23px;
-  margin-bottom: 54px;
-} 
-
-.infrastructure {
-  background-color: var(--basic-white);
-  text-align: center;
-  line-height: 21px;
-}
-
-.infrastructure h2 {
-  font-size: 21px;
-  font-weight: 700;
-}
-
-.infrastructure p {
-  color: var(--basic-extra-black);
-
-}
-
-.about-city-feature {
-  background-color: var(--basic-natural);
-  text-align: center;
-  line-height: 21px;
-}
-
-.about-city-feature h2 {
- font-size: 21px;
- font-weight: 700;
-}
-
-.about-city-feature p {
-  color: var(--basic-extra-black);
-}
-
-.about-city-feature span {
-  color: var(--basic-extra-black);
 }
 
 /* Main Index Button */
@@ -415,15 +439,20 @@ margin-bottom: 51px;
 
 /* Main Footer Index*/
 .main-footer {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  padding: 0;
 }
 
 .contact-tag-tel {
   font-size: 21px;
   font-weight: 700;
   text-align: center;
+  padding-top: 23px;
+  padding-bottom: 36px;
 }
 
 .tag a {
@@ -432,27 +461,26 @@ margin-bottom: 51px;
 
 .tag {
   margin-bottom: 9px;
-  margin-top: 23px;
   text-align: left;
 }
 
-.tel {
-  margin-bottom: 36px;
+.contact-social {
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .contact-social ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  min-width: 150px;
+  width: 150px;
   margin: 0;  
   padding: 0;
-  margin-top: 36px;
   list-style: none;  
 }
 
 a.social-button {
-  display: inline-block;
+  display: flex;
   width: 46px;
   height: 48px;
   text-align: center;
@@ -487,18 +515,22 @@ a.social-button {
   background-color: var(--basic-dark-blue);
 }
 
-.developer-logo {
-  display: inline-block;
-  color: var(--special-black);
-  margin-top: 39px;
-  margin-bottom: 41px;
+.developer {
+  display: flex;
 }
 
-.by {
- margin-top: 49px;
- margin-bottom: 45px;
- margin-right:8px;
+.developer-logo {
+  color: var(--special-black);
+  padding-top: 39px;
+  padding-bottom: 41px;
 }
+
+.developer span {
+  padding-top: 49px;
+  padding-bottom: 45px;
+  margin-right: 8px;
+}
+
 /*
 .developer a:hover,
 .developer a:focus {
@@ -510,17 +542,14 @@ a.social-button {
 }
 */
 
-
 /* Main Hotels */
 .filter {
-display: flex;
-margin: 0;
-padding: 0;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .filters {
-  margin-top: -32px;
-  margin-bottom: -63px;
   background-color: var(--basic-blue);
   background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
@@ -533,7 +562,13 @@ padding: 0;
   line-height: 21px;
 }
 
+.filters fieldset {
+  border: none;
+}
+
 .filters ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -557,25 +592,24 @@ padding: 0;
 
 .results-search-find {
   display: flex;
-  margin-right: 73px;
-  margin-left: 73px;
+  padding: 0 73px;
 } 
 
 .find {
-  margin-top: 29px;
-  margin-bottom: 31px;
+  padding-top: 29px;
+  padding-bottom: 31px;
 }
 
 .results {
   display: flex;
-  margin-left: 47px;
+  margin-left: 46px;
 }
 
 .results span{
   padding: 0;
   margin: 0;
   margin-left: 1px;
-  margin-top: 31px;
+  padding-top: 31px;
 }
 
 .results-list {
@@ -585,7 +619,7 @@ padding: 0;
   list-style: none;
   font-size: 12px;
   line-height: 18px;
-  margin-top: 32px;
+  padding-top: 32px;
 }
 
 .filter-price {
@@ -606,12 +640,12 @@ margin-left: 40px;
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-top: 40px;
-  margin-left: 100px;
+  padding-top: 40px;
+  margin-left: 503px;
 }
 
 .up-down li:nth-child(1) {
-margin-right: 12px;
+  margin-right: 12px;
 }
 
 .results-search-find {
@@ -627,7 +661,6 @@ margin-right: 12px;
   font-size: 12px;
   line-height: 18px;
 }
-
 
 .filter-price {
   color: var(--basic-light-blue);
@@ -652,18 +685,14 @@ margin-right: 12px;
 }
 
 .hotels-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   margin: 0;
-  padding: 0;
+  padding: 0 73px;
   list-style: none;
 }
 
 .hotels-list li {
   display: flex;
-  margin-right: 73px;
-  margin-left: 73px;
+  align-items: center;
 }
 
 .hotels-list div.amara,
@@ -678,16 +707,14 @@ margin-right: 12px;
 
 .info-type-price {
   display: inline-block;
-  margin-bottom: 15.5px;
-  margin-top: -7px;
+  margin-bottom: 9px;
+  margin-top: 7px;
 }
 
 .type {
   width: 107px;
   margin-right: 7px;
   padding-right: 28px;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 
 .price {
@@ -695,10 +722,10 @@ margin-right: 12px;
 }
 
 .hotel-picture {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
+  padding-top: 30px;
+  padding-bottom: 30px;
 
+}
 .hotel-amara,
 .hotel-desert,
 .hotel-villas {
@@ -707,17 +734,22 @@ margin-right: 12px;
   margin-left: 29px;
 }
 
-.name-hotel a {
-  display: inline-block;
+.name-hotel a{
   font-size: 21px;
   font-weight: 700;
   color: var(--basic-black); 
 }
 
+h3.name-hotel {
+  padding-top: 23.5px;
+  margin-top:0;
+  margin-bottom: 0;
+}
+
 .rating-stars {
   display: flex;
   justify-content: flex-end;
-  margin-top: 29px;
+  padding-top: 29px;
 }
 
 .rating-stars span:nth-child(n) {
@@ -726,6 +758,8 @@ margin-right: 12px;
 
 p.rating-value {
   margin-top: 47px;
+  margin-bottom: 0;
+  margin-bottom: 33px;
 }
 
 a.button-book {
@@ -780,10 +814,10 @@ a.button-more {
   color: var(--basic-white);
   background-color: var(--basic-light-brown);
   border: none;
- }
+}
 
- .button-more-book a.button-book:hover,
- .button-more-book a.button-book:focus {
+.button-more-book a.button-book:hover,
+.button-more-book a.button-book:focus {
   background-color: var(--basic-brown);
 }
 
