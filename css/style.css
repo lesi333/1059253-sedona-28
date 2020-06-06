@@ -172,7 +172,7 @@ p.welcome-picture {
   padding: 0;
   padding-top: 57px;
   margin: 0;
-  margin-top: -56.5px;
+  margin-top: -56px;
 }
 
 .info-city .info-description {
@@ -183,7 +183,7 @@ p.welcome-picture {
   padding-bottom: 32px;
   padding-top: 42.5px;
   margin: 0;
-  margin-bottom: 16.5px;
+  margin-bottom: 11.5px;
   margin-left: 365px;
   margin-right: 365px;
 }
@@ -208,11 +208,6 @@ p.welcome-picture {
   font-weight: 700;
   text-align: center;
   margin-top: 57px;
-}
-
-.interesting-search {
-  line-height: 24px;
-  text-align: center;
 }
 
 .about-city {
@@ -428,9 +423,11 @@ p.about-city-grand {
 }
 
 .interesting-search {
+  line-height: 24px;
+  text-align: center;
   width: 435px;
   margin: 0;
-  margin-bottom: 51px;
+  margin-bottom: 44px;
 }
 
 /* Main Index Button */
@@ -475,10 +472,7 @@ p.about-city-grand {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-top: 61px;
-  padding-bottom: 55px;
-  padding-left: 55px;
-  padding-right: 55px;
+  padding: 55px;
   margin: 0;
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
   position: relative;
@@ -523,6 +517,7 @@ p.about-city-grand {
   color: var(--basic-white);
   border: none;
   padding: 16px 182px;
+  margin-top: 25px;
 }
 
 .search-container button.find:hover,
@@ -607,13 +602,13 @@ p.about-city-grand {
 .form-adult .minus {
   position: absolute;
   top: 7px;
-  left: 119px;
+  left: 118px;
 }
 
 .form-adult .plus {
   position: absolute;
   top: 11px;
-  left: 195px;
+  left: 196px;
 }
 
 .form-children {
@@ -629,7 +624,7 @@ p.about-city-grand {
 .form-children .plus {
   position: absolute;
   top: 11px;
-  right: 8px;
+  right: 7px;
 }
 
 .search button.minus:hover rect,
@@ -892,7 +887,7 @@ a.developer-logo:active path{
 }
 
 .filter-items .infrastructure-items {
-  margin-right: 98px;
+  margin-right: 96px;
 }
 
 .filter-items .housing-items {
@@ -901,9 +896,11 @@ a.developer-logo:active path{
 
 .cost-items p {
   text-align: left;
+  font-size: 16px;
+  line-height: 21px;
   margin: 0;
   margin-bottom: 10.5px;
-  line-height: 21px;
+  padding-left: 1px;
 }
 
 .filter-items .filter-cost {
@@ -973,7 +970,7 @@ margin-top:20px;
   margin-left: 46px;
 }
 
-.results span{
+.results span {
   padding: 0;
   margin: 0;
   margin-left: 1px;
@@ -1005,10 +1002,11 @@ margin-top:20px;
 .filter-up-down .up-down {
   display: flex;
   justify-items: flex-end;
+  align-self: center;
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-top: 40px;
+  padding-top: 32px;
   margin-left: 503px;
 }
 
@@ -1093,6 +1091,7 @@ a.filter-down:active path {
 .hotels-list li {
   display: flex;
   align-items: center;
+  outline: 1px solid #ff0000;
 }
 
 .hotels-list div.amara,
@@ -1103,12 +1102,13 @@ a.filter-down:active path {
   width: 921px;
   margin: 0;
   padding: 0;
+  
 }
 
 .info-type-price span{
   display: inline-block;
-  margin-top: 5px;
-  margin-bottom: 15px;
+  margin-top: 3px;
+  margin-bottom: 16px;
 }
 
 .info-type-price .type-amara {
@@ -1128,7 +1128,7 @@ a.filter-down:active path {
 
 .hotel-picture {
   padding-top: 30px;
-  padding-bottom: 27px;
+  padding-bottom: 24px;
 }
 
 .hotel-amara,
@@ -1146,7 +1146,7 @@ a.filter-down:active path {
 }
 
 h3.name-hotel {
-  padding-top: 24px;
+  padding-top: 25px;
   margin-top:0;
   margin-bottom: 0;
 }
@@ -1172,7 +1172,7 @@ h3.name-hotel {
 
 p.rating-value {
   margin-top: 47px;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
   padding-top: 3px;
   padding-bottom:3px;
   padding-left: 15px;
