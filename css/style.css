@@ -172,7 +172,7 @@ p.welcome-picture {
   padding: 0;
   padding-top: 57px;
   margin: 0;
-  margin-top: -56px;
+  margin-top: -55px;
 }
 
 .info-city .info-description {
@@ -225,9 +225,9 @@ p.welcome-picture {
   line-height: 21px;
   text-align: center;
   padding-top: 47px;
-  padding-right: 51px;
+  padding-right: 49px;
   padding-bottom: 54px;
-  padding-left: 52px;
+  padding-left: 50px;
 }
 
 .about-city-color h2.about-life {
@@ -247,12 +247,12 @@ p.welcome-picture {
 }
 
 .about-city-color p.life {
-  margin-top: 23px;
+  margin-top: 24px;
   margin-bottom: 0;
 }
 
 .about-city-color p.bridge {
-  margin-top: 23px;
+  margin-top: 24px;
   margin-bottom: 0;
 }
 
@@ -314,7 +314,7 @@ p.welcome-picture {
 .infrastructure .item-souvenir { 
   background-image: url("../img/icon-2.svg");
   background-repeat: no-repeat;
-  background-position: 165px 55px;
+  background-position: 167px 55px;
 }
 
 .about-city-feature {
@@ -669,7 +669,7 @@ p.about-city-grand {
   text-align: center;
   padding-top: 23px;
   padding-bottom: 36px;
-  padding-left: 71px;
+  padding-left: 73px;
 }
 
 .tag a {
@@ -682,7 +682,7 @@ p.about-city-grand {
 }
 
 .main-footer .contact-social {
-  padding-top: 36px;
+  padding-top: 37px;
   padding-bottom: 36px;
   padding-right: 2px;
 }
@@ -744,7 +744,7 @@ p.about-city-grand {
   width: 115px;
   height: 41px;
   color: var(--special-black);
-  padding-top: 39px;
+  padding-top: 41px;
 }
 
 .developer span {
@@ -845,7 +845,7 @@ a.developer-logo:active path{
   display: block;
   cursor: pointer;
   user-select: none;
-  padding-left: 42px;
+  padding-left: 40px;
 }
 
 .housing-item .filter-check::before {
@@ -892,7 +892,7 @@ a.developer-logo:active path{
 }
 
 .filter-items .housing-items {
-  margin-right: 324px;
+  margin-right: 322px;
 }
 
 .cost-items p {
@@ -918,7 +918,8 @@ a.developer-logo:active path{
   display: inline-block;
   text-align: center;
   padding-top: 2.5px;
-  padding-bottom: 4.5px;  
+  padding-bottom: 4.5px; 
+  padding-left: 5px; 
 }
 
 .filter-cost .min-cost {
@@ -937,16 +938,16 @@ margin-top:20px;
 .filter-items button {
   display: block;
   padding-top: 8px;
-  padding-bottom: 7px;
-  padding-right: 35px;
-  padding-left: 36px ;
+  padding-bottom: 9px;
+  padding-right: 34px;
+  padding-left: 34px;
   color: var(--basic-white);
   text-transform: uppercase;
   background-color: transparent;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
   margin-top: 2px;
-  margin-left: auto;
+  margin-left: 85px;
   margin-right: auto;
 }
 
@@ -1094,7 +1095,6 @@ a.filter-down:active path {
 .hotels-list li {
   display: flex;
   align-items: center;
-  outline: 1px solid #ff0000;
 }
 
 .hotels-list div.amara,
@@ -1109,7 +1109,7 @@ a.filter-down:active path {
 
 .info-type-price span{
   display: inline-block;
-  margin-top: 6px;
+  margin-top: 8px;
   margin-bottom: 16px;
 }
 
@@ -1138,7 +1138,7 @@ a.filter-down:active path {
 .hotel-villas {
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
+  margin-left: 28px;
 }
 
 .name-hotel a{
@@ -1148,7 +1148,7 @@ a.filter-down:active path {
 }
 
 h3.name-hotel {
-  padding-top: 23px;
+  padding-top: 24px;
   margin-top:0;
   margin-bottom: 0;
 }
@@ -1215,7 +1215,7 @@ a.button-more {
 }
 
 .button-more-book .button-more {
-  margin-right: 2px;
+  margin-right: 4px;
 }
 
 .button-more-book .button-more {
