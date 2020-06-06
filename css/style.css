@@ -207,6 +207,7 @@ p.welcome-picture {
   line-height: 24px;
   font-weight: 700;
   text-align: center;
+  margin-bottom: 33px;
   margin-top: 57px;
 }
 
@@ -668,7 +669,7 @@ p.about-city-grand {
   text-align: center;
   padding-top: 23px;
   padding-bottom: 36px;
-  padding-left: 68px;
+  padding-left: 71px;
 }
 
 .tag a {
@@ -736,7 +737,7 @@ p.about-city-grand {
 
 .developer {
   display: flex;
-  padding-right: 74px;
+  padding-right: 73px;
 }
 
 .developer-logo {
@@ -836,7 +837,7 @@ a.developer-logo:active path{
   display: block;
   cursor: pointer;
   user-select: none;
-  padding-left: 41px;
+  padding-left: 40px;
 }
 
 .housing-item label {
@@ -844,7 +845,7 @@ a.developer-logo:active path{
   display: block;
   cursor: pointer;
   user-select: none;
-  padding-left: 44px;
+  padding-left: 42px;
 }
 
 .housing-item .filter-check::before {
@@ -891,12 +892,13 @@ a.developer-logo:active path{
 }
 
 .filter-items .housing-items {
-  margin-right: 325px;
+  margin-right: 324px;
 }
 
 .cost-items p {
   text-align: left;
   font-size: 16px;
+  font-weight: 700;
   line-height: 21px;
   margin: 0;
   margin-bottom: 10.5px;
@@ -905,7 +907,7 @@ a.developer-logo:active path{
 
 .filter-items .filter-cost {
   display: flex;
-  width: 311px;
+  width: 316px;
   text-align: center;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
@@ -924,7 +926,7 @@ a.developer-logo:active path{
 }
 
 .filter-cost .max-cost {
-  width: 157.5px;
+  width: 159px;
 }
 
 /*
@@ -943,6 +945,7 @@ margin-top:20px;
   background-color: transparent;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
+  margin-top: 2px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1091,6 +1094,7 @@ a.filter-down:active path {
 .hotels-list li {
   display: flex;
   align-items: center;
+  outline: 1px solid #ff0000;
 }
 
 .hotels-list div.amara,
@@ -1105,7 +1109,7 @@ a.filter-down:active path {
 
 .info-type-price span{
   display: inline-block;
-  margin-top: 3px;
+  margin-top: 6px;
   margin-bottom: 16px;
 }
 
@@ -1126,7 +1130,7 @@ a.filter-down:active path {
 
 .hotel-picture {
   padding-top: 30px;
-  padding-bottom: 24px;
+  padding-bottom: 23px;
 }
 
 .hotel-amara,
@@ -1134,7 +1138,7 @@ a.filter-down:active path {
 .hotel-villas {
   display: flex;
   flex-direction: column;
-  margin-left: 29px;
+  margin-left: 30px;
 }
 
 .name-hotel a{
@@ -1144,7 +1148,7 @@ a.filter-down:active path {
 }
 
 h3.name-hotel {
-  padding-top: 25px;
+  padding-top: 23px;
   margin-top:0;
   margin-bottom: 0;
 }
