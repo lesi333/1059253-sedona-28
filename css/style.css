@@ -1091,7 +1091,6 @@ a.filter-down:active path {
 .hotels-list li {
   display: flex;
   align-items: center;
-  outline: 1px solid #ff0000;
 }
 
 .hotels-list div.amara,
@@ -1101,8 +1100,7 @@ a.filter-down:active path {
   justify-content: space-between;
   width: 921px;
   margin: 0;
-  padding: 0;
-  
+  padding: 0; 
 }
 
 .info-type-price span{
