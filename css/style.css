@@ -911,6 +911,7 @@ a.developer-logo:active path{
   text-align: center;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
+  margin-left: -1px;
   position: relative;
 }
 
@@ -930,7 +931,7 @@ a.developer-logo:active path{
   text-align: center;
   padding-top: 2.5px;
   padding-bottom: 4.5px; 
-  padding-left: 5px; 
+  padding-left: 4px; 
 }
 
 .filter-cost .min-cost {
@@ -998,7 +999,7 @@ a.developer-logo:active path{
   background-color: transparent;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
-  margin-left: 85px;
+  margin-left: 84px;
   margin-right: auto;
 }
 
