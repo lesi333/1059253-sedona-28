@@ -66,16 +66,22 @@
            </fieldset>
           </div>
           <div class="cost-items">
-            <p>Стоимость в сутки (p):</p>
-            <div class="filter-cost">
-              <span class="min-cost">От 0</span>
-              <span class="max-cost">До 3000</span>
-            </div>
-            <div class="range-cost">
-            <!--Позднее здесь с помощью CSS можно отрисовать шкалу ранжирования-->
-             <span class="range-min-cost">Минимальный диапозон</span>
-             <span class="range-max-cost">Максимальный диапозон</span>
-            </div>  
+            <fieldset class="filter-item">
+             <div class="range-filter">
+               <legend>Стоимость в сутки (p):</legend>
+               <div class="filter-cost">
+                <span class="min-cost">От 0</span>
+                <span class="max-cost">До 3000</span>
+               </div>
+               <div class="range-cost">
+                <div class="scale">
+                 <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+               </div> 
+             </div> 
+            </fieldset>
             <button type="submit">Показать</button>
           </div>
       </div>
@@ -109,7 +115,7 @@
           </div>
         </div>
         <ul class="hotels-list">
-         <li>
+         <li class="hotel-items-amara">
            <a class="hotel-picture"> 
              <img src="img/Layer 21.jpg" width="135" height="90" alt="Гостиница Amara Resort &amp; Spa">
            </a> 
@@ -141,7 +147,7 @@
            </div>
            </div>
          </li> 
-         <li>
+         <li class="hotel-items-desert">
             <a class="hotel-picture">
                <img src="img/Layer 89 copy.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
             </a> 
@@ -172,7 +178,7 @@
             </div>  
             </div>  
          </li> 
-         <li>
+         <li class="hotel-items-villas">
             <a class="hotel-picture">
                <img src="img/Rectangle.jpg" width="135" height="90" alt=" Апартаменты Villas At Poco Diablo">
             </a> 

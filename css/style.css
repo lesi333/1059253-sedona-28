@@ -21,7 +21,7 @@
   --special-black: #231F20;
   --special-middle-gray: #CACACA;
   --special-logo-gray: #BDBBBC;
-  --spacial-input-gray: #E5E5E5;
+  --special-input-gray: #E5E5E5;
  
 }
 /*outline: 1px solid #ff0000;*/
@@ -537,7 +537,7 @@ p.about-city-grand {
 
 .search-container input:focus {
   background-color: var(--basic-white);
-  border: 2px solid var(--spacial-input-gray);
+  border: 2px solid var(--special-input-gray);
 }
 
 .search-person input {
@@ -667,7 +667,7 @@ p.about-city-grand {
   font-size: 21px;
   font-weight: 700;
   text-align: center;
-  padding-top: 23px;
+  padding-top: 24px;
   padding-bottom: 36px;
   padding-left: 73px;
 }
@@ -888,14 +888,14 @@ a.developer-logo:active path{
 }
 
 .filter-items .infrastructure-items {
-  margin-right: 96px;
+  margin-right: 95px;
 }
 
 .filter-items .housing-items {
-  margin-right: 322px;
+  margin-right: 324px;
 }
 
-.cost-items p {
+.cost-items legend {
   text-align: left;
   font-size: 16px;
   font-weight: 700;
@@ -911,6 +911,17 @@ a.developer-logo:active path{
   text-align: center;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
+  position: relative;
+}
+
+.min-cost::after {
+  position: absolute;
+  content: " ";
+  top: 5px;
+  left: 156px;
+  width: 2px;
+  height: 22px;
+  background-color: var(--basic-white);
 }
 
 .filter-cost .min-cost,
@@ -930,10 +941,51 @@ a.developer-logo:active path{
   width: 159px;
 }
 
-/*
-.filter-cost .range-cost {
-margin-top:20px;
-}*/
+.cost-items .range-filter {
+ width: 316px;
+}
+
+.cost-items .range-cost {
+  position: relative;
+  height: 30px;  
+  padding-top: 20px;
+  margin-bottom: 25px;
+}
+
+.range-cost .scale {
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-cost .bar {
+  width: 248px;
+  height: 2px;  
+  background-color: var(--basic-white);
+  margin-left: 12px;
+}
+
+.range-cost .toggle {
+  position: absolute;
+  top: 11px;
+  width: 21px;
+  height: 22px;
+  padding: 0;
+  background-image: url("../img/filter-button.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  cursor: pointer;
+}
+
+.range-cost .toggle-max {
+  left: 252px;
+}
+
+.range-cost .toggle:hover,
+.range-cost .toggle:focus {
+  width: 23px;
+  height: 24px;
+  transform: scale(1.2);
+}
 
 .filter-items button {
   display: block;
@@ -946,7 +998,6 @@ margin-top:20px;
   background-color: transparent;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
-  margin-top: 3px;
   margin-left: 85px;
   margin-right: auto;
 }
@@ -1092,9 +1143,16 @@ a.filter-down:active path {
   list-style: none;
 }
 
-.hotels-list li {
+.hotels-list li.hotel-items-amara,
+.hotels-list li.hotel-items-desert,
+.hotels-list li.hotel-items-villas {
   display: flex;
   align-items: center;
+  border-top: 1px solid var(--special-input-gray);
+}
+
+.hotels-list li.hotel-items-villas {
+  border-bottom: 1px solid var(--special-input-gray);
 }
 
 .hotels-list div.amara,
@@ -1107,7 +1165,7 @@ a.filter-down:active path {
   padding: 0; 
 }
 
-.info-type-price span{
+.info-type-price span {
   display: inline-block;
   margin-top: 7px;
   margin-bottom: 16px;
@@ -1120,7 +1178,7 @@ a.filter-down:active path {
 
 .info-type-price .type-desert {
   width: 82px;
-  margin-right: 30px;
+  margin-right: 31px;
 }
 
 .info-type-price .type-villas {
@@ -1151,7 +1209,7 @@ a.filter-down:active path {
   margin-left: 28px;
 }
 
-.name-hotel a{
+.name-hotel a {
   font-size: 21px;
   font-weight: 700;
   color: var(--basic-black); 
@@ -1163,11 +1221,12 @@ h3.name-hotel {
   margin-bottom: 0;
 }
 
-.rating-stars ul{
+.rating-stars ul {
   display: flex;
   justify-content: flex-end;
   padding:0;
   padding-top: 29px;
+  list-style: none;
 }
 
 .rating-stars li:not(:last-child) {
@@ -1219,7 +1278,7 @@ a.button-more {
   line-height: 21px;
 }
 
-.button-more-book a{
+.button-more-book a {
   line-height: 21px;
   font-weight: 700;
 }
