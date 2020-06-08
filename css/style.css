@@ -1029,7 +1029,7 @@ a.developer-logo:active path{
   padding: 0;
   margin: 0;
   margin-left: 1px;
-  padding-top: 31px;
+  padding-top: 32px;
 }
 
 .results-list {
@@ -1139,13 +1139,16 @@ a.filter-down:active path {
 
 .hotels-list {
   margin: 0;
-  padding: 0 73px;
+  padding: 0;
   list-style: none;
 }
 
-.hotels-list li.hotel-items-amara,
-.hotels-list li.hotel-items-desert,
-.hotels-list li.hotel-items-villas {
+.hotel-item {
+  margin: 0;
+  padding: 0 73px;
+}
+
+.hotels-list .hotel-item {
   display: flex;
   align-items: center;
   border-top: 1px solid var(--special-input-gray);
@@ -1242,7 +1245,7 @@ h3.name-hotel {
 }
 
 p.rating-value {
-  margin-top: 47px;
+  margin-top: 40px;
   margin-bottom: 30px;
   padding-top: 3px;
   padding-bottom:3px;
