@@ -146,6 +146,7 @@ a.main-header-logo {
 .welcome {
   background-color: var(--special-coll-blue);
   background-image: url("../img/background photo.jpg");
+  background-position: top center;
   background-repeat: no-repeat;
   padding-top: 77.35px;
   padding-bottom: 71.76px;
@@ -177,6 +178,7 @@ p.welcome-picture {
 
 .info-city .info-description {
   display: inline-block;
+  vertical-align: middle;
   font-size: 21px;
   font-weight: 700;
   text-align: center;
@@ -283,18 +285,21 @@ p.welcome-picture {
 
 .about-residence p {
   display: inline-block;
+  vertical-align: middle;
   width: 254px;
   margin: 0;
 }
 
 .about-food p {
   display: inline-block;
+  vertical-align: middle;
   width: 297px;
   margin: 0;
 }
 
 .about-souvenir p {
   display: inline-block;
+  vertical-align: middle;
   width: 270px;
   margin: 0;
 }
@@ -457,6 +462,7 @@ p.about-city-grand {
 }
 
 /* Main Index Form */
+
 .search {
   width: 568px;
   line-height: 26px;
@@ -491,7 +497,7 @@ p.about-city-grand {
   margin-left: 19px;
 }  
 
-.search-date-out input{
+.search-date-out input {
   width: 346px;
   height: 38px;
   padding-left: 13px;
@@ -509,6 +515,7 @@ p.about-city-grand {
 
 .search-container button.find {
   display: inline-block;
+  vertical-align: middle;
   font-weight: 700;
   font-size: 21px;
   text-align: center;
@@ -581,12 +588,12 @@ p.about-city-grand {
   top: 7px;
 }
 
-.search button.calendar:hover path,
-.search button.calendar:focus path {
+button.calendar:hover path,
+button.calendar:focus path {
   fill: var(--basic-black);
 }
 
-.search button.calendar:active path {
+button.calendar:active path {
   fill: var(--basic-light-blue);
 }
 
@@ -628,21 +635,21 @@ p.about-city-grand {
   right: 7px;
 }
 
-.search button.minus:hover rect,
-.search button.minus:focus rect {
+button.minus:hover rect,
+button.minus:focus rect {
   fill: var(--basic-black);
 }
 
-.search button.minus:active rect {
+button.minus:active rect {
   fill: var(--basic-light-blue);
 }
 
-.search button.plus:hover path,
-.search button.plus:focus path {
+button.plus:hover path,
+button.plus:focus path {
   fill: var(--basic-black);
 }
 
-.search button.plus:active path {
+button.plus:active path {
   fill: var(--basic-light-blue);
 }
 
@@ -672,7 +679,8 @@ p.about-city-grand {
   padding-left: 73px;
 }
 
-.tag a {
+.tag a,
+.tel a {
   color: var(--basic-black);
 }
 
@@ -754,20 +762,23 @@ p.about-city-grand {
 }
 
 a.developer-logo:hover path,
-a.developer-logo:focus path{
+a.developer-logo:focus path {
   fill: var(--basic-light-blue);
 }
 
-a.developer-logo:active path{
+a.developer-logo:active path {
   fill: var(--special-logo-gray);
 }
 
 /* Main Hotels */
 
+/* Hotels Filters */
+
 .filters {
   background-color: var(--basic-blue);
   background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
+  background-position: top center;
   color: var(--basic-white);
 }
 
@@ -928,6 +939,7 @@ a.developer-logo:active path{
 .filter-cost .min-cost,
 .filter-cost .max-cost {
   display: inline-block;
+  vertical-align: middle;
   text-align: center;
   padding-top: 2.5px;
   padding-bottom: 4.5px; 
@@ -1010,6 +1022,8 @@ a.developer-logo:active path{
   border-radius: 2px;
   background-color: var(--basic-white);
 }
+
+/* Search */
 
 .results-search-find {
   display: flex;
@@ -1160,7 +1174,7 @@ a.filter-down:active path {
   border-top: 1px solid var(--special-input-gray);
 }
 
-.hotels-list li.hotel-items-villas {
+.hotels-list li:last-child {
   border-bottom: 1px solid var(--special-input-gray);
 }
 
@@ -1176,6 +1190,7 @@ a.filter-down:active path {
 
 .info-type-price span {
   display: inline-block;
+  vertical-align: middle;
   margin-top: 5px;
   margin-bottom: 16px;
 }
