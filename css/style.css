@@ -653,6 +653,11 @@ button.plus:active path {
   fill: var(--basic-light-blue);
 }
 
+.map iframe {
+  width: 100%;  
+  border: none;
+}
+
 /* Main Footer Index*/
 
 .main-footer {
