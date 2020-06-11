@@ -1179,7 +1179,7 @@ a.filter-down:active path {
   border-top: 1px solid var(--special-input-gray);
 }
 
-.hotels-list li:last-child {
+.hotels-list .hotel:last-child {
   border-bottom: 1px solid var(--special-input-gray);
 }
 
