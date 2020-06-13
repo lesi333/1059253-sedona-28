@@ -102,14 +102,14 @@
         <h3 class="interesting-now">Заинтересовались?</h3>
         <p class="interesting-search">Укажите предполагаемые даты поездки,<br> 
            и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-         <a class="button" href="#">Поиск гостиницы в Седоне</a>  
+         <a class="search-button button" href="#">Поиск гостиницы в Седоне</a>  
       </section>
       <section class="search">
-        <form action="https://echo.htmlacademy.ru/" method="POST">
+        <form class="search-form search-hide" action="https://echo.htmlacademy.ru/" method="POST">
          <div class="search-container"> 
           <div class="search-date-in form-input">
-           <label for="date-of-arrival ">Дата заезда:</label>
-           <input id="date-of-arrival" type="text" name="date-of-arrival" value="24 апреля 2017" required>
+           <label for="date-of-arrival">Дата заезда:</label>
+           <input class="date-of-arrival" id="date-of-arrival" type="text" name="date-of-arrival" value="24 апреля 2017">
            <button class="calendar" type="button" aria-label="Указать дату заезда">
            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
             <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" fill="#A9A9A9"/>
@@ -119,7 +119,7 @@
           </div>
           <div class="search-date-out form-output">
            <label for="date-of-departure">Дата выезда:</label>
-           <input id="date-of-departure" type="text" name="date-of-departure" value="4 июля 2017" required>
+           <input class="date-of-departure" id="date-of-departure" type="text" name="date-of-departure" value="4 июля 2017">
            <button class="calendar" type="button" aria-label="Указать дату выезда">
            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
             <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" fill="#A9A9A9"/>
@@ -127,7 +127,6 @@
            </svg>
            </button>
           </div>
-
           <div class="search-person">
             <div class="adult form-adult">
            <label for="adult">Взрослые:</label>
@@ -136,7 +135,7 @@
               <rect width="12" height="3"  fill="#A9A9A9"/>
             </svg>
            </button>
-           <input id="adult" type="text" name="adult" min="0" value="2">
+           <input class="adult" id="adult" type="text" name="adult" min="0" value="2">
            <button class="plus" type="button" aria-label="Добавить одного взрослого">
            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
@@ -151,7 +150,7 @@
               <rect width="12" height="3"  fill="#A9A9A9"/>
             </svg>
            </button>
-           <input id="children" type="text" name="children" min="0" value="0">
+           <input class="children" id="children" type="text" name="children" min="0" value="0">
            <button class="plus" type="button" aria-label="Добавить одного ребенка">
            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
@@ -192,6 +191,7 @@
        </a>
       </div>
     </footer> 
-   </div> 
+   </div>
+   <script src="js/script-min.js"></script> 
   </body>
 </html>
