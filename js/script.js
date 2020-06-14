@@ -6,31 +6,37 @@ var adult = searchForm.querySelector(".adult");
 var children = searchForm.querySelector(".children");
 
 var isStorageSupport = true;
-var storage = "";
+var adultItems = "";
+var ChildrenItems = "";
 
 try {
-    storage = localStorage.getItem("adult");
+    adultItems = localStorage.getItem("adult");
 } catch (err) {
     isStorageSupport = false;
 }
 
 try {
-    storage = localStorage.getItem("children");
+    ChildrenItems = localStorage.getItem("children");
 } catch (err) {
     isStorageSupport = false;
 } 
 
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
-    searchForm.classList.add("form-open");
-     if (storage) {
-      adult.value = storage;
-      children.value = storage;
-      children.focus();
-      } else {
+    searchForm.classList.toggle("search-hide");
+    if (!searchForm.classList.contains("search-hide")) {
+        searchForm.classList.add("form-open");
+        searchForm.classList.remove("form-error");
+    }
+    dateArrival.focus();
+      if (adultItems) {
+        adult.value = adultItems;
+        children.focus();
+      } 
+      if (ChildrenItems) {
+        children.value = ChildrenItems;
         adult.focus();
       }
-    dateArrival.focus();
 });
 
 searchForm.addEventListener("submit", function (evt) {
@@ -53,10 +59,12 @@ searchForm.addEventListener("submit", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
+  if (evt.keyCode === 27) {
+    if (searchForm.classList.contains("form-open")) {
     evt.preventDefault();
-    console.log("Удалить");
     searchForm.classList.remove("form-open");
+    searchForm.classList.add("search-hide");
     searchForm.classList.remove("form-error");
     }
+  }
 });
