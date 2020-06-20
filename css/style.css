@@ -183,7 +183,7 @@ p.welcome-picture {
   font-weight: 700;
   text-align: center;
   padding-bottom: 32px;
-  padding-top: 42.5px;
+  padding-top: 42px;
   margin: 0;
   margin-bottom: 11.5px;
   margin-left: 365px;
@@ -280,7 +280,7 @@ p.welcome-picture {
 .about-residence,
 .about-food,
 .about-souvenir {
-  padding-bottom: 82px;
+  padding-bottom: 83px;
 } 
 
 .about-residence p {
@@ -365,19 +365,19 @@ p.welcome-picture {
 
 p.about-city-square {
   width: 209px;
-  margin-top: 23px;
+  margin-top: 26px;
   margin-bottom: 0;
 } 
 
 p.about-city-vegas {
   width: 261px;
-  margin-top: 23px;
+  margin-top: 26px;
   margin-bottom: 0;
 } 
 
 p.about-city-grand {
   width: 247px;
-  margin-top: 23px;
+  margin-top: 26px;
   margin-bottom: 0;
 } 
 
@@ -541,14 +541,14 @@ p.about-city-grand {
 .search-date-in input {
   width: 346px;
   height: 38px;
-  padding-left: 13px;
+  padding-left: 11px;
   margin-left: 19px;
 }  
 
 .search-date-out input {
   width: 346px;
   height: 38px;
-  padding-left: 13px;
+  padding-left: 11px;
   margin-left: 16px;
 }
 
@@ -591,7 +591,7 @@ p.about-city-grand {
   border: none;
   outline: none;
   padding: 16px 182px;
-  margin-top: 25px;
+  margin-top: 27px;
 }
 
 .search-container button.find:hover,
@@ -663,13 +663,13 @@ button.calendar:active path {
 
 .form-adult .minus {
   position: absolute;
-  top: 7px;
+  top: 9px;
   left: 118px;
 }
 
 .form-adult .plus {
   position: absolute;
-  top: 11px;
+  top: 13px;
   left: 196px;
 }
 
@@ -679,13 +679,13 @@ button.calendar:active path {
 
 .form-children .minus {
   position: absolute;
-  top: 7px;
+  top: 9px;
   right: 83px;
 }
 
 .form-children .plus {
   position: absolute;
-  top: 11px;
+  top: 13px;
   right: 7px;
 }
 
