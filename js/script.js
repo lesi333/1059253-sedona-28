@@ -23,11 +23,14 @@ try {
 
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
-    searchForm.classList.toggle("search-hide");
-    if (!searchForm.classList.contains("search-hide")) {
-        searchForm.classList.add("form-open");
-        searchForm.classList.remove("form-error");
-    }
+    if (searchForm.classList.contains("form-open")) {
+      searchForm.classList.add("search-hide");
+      searchForm.classList.remove("form-open");
+      searchForm.classList.remove("form-error");
+    } else {
+      searchForm.classList.add("form-open");
+      searchForm.classList.remove("search-hide");
+    };
     dateArrival.focus();
       if (adultItems) {
         adult.value = adultItems;
@@ -41,30 +44,25 @@ link.addEventListener("click", function (evt) {
 
 searchForm.addEventListener("submit", function (evt) {
     if (!dateArrival.value || !dateDeparture.value) {
-        evt.preventDefault();
-        searchForm.classList.remove("form-error");
-        searchForm.offsetWidth = searchForm.offsetWidth;
-        searchForm.classList.add("form-error");
-        //console.log(searchForm.offsetWidth);
-        //console.log(dateArrival.value);
-        //console.log(dateDeparture.value);
-        //console.log(adult.value);
-        //console.log(children.value);
+      evt.preventDefault();
+      searchForm.classList.remove("form-error");
+      searchForm.offsetWidth = searchForm.offsetWidth;
+      searchForm.classList.add("form-error");
     } else { 
-      if (isStorageSupport) {
-        localStorage.setItem("adult", adult.value);
-        localStorage.setItem("children", children.value);
-      }
+    if (isStorageSupport) {
+      localStorage.setItem("adult", adult.value);
+      localStorage.setItem("children", children.value);
     }
+  }
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     if (searchForm.classList.contains("form-open")) {
-    evt.preventDefault();
-    searchForm.classList.remove("form-open");
-    searchForm.classList.add("search-hide");
-    searchForm.classList.remove("form-error");
+      evt.preventDefault();
+      searchForm.classList.remove("form-open");
+      searchForm.classList.add("search-hide");
+      searchForm.classList.remove("form-error");
     }
   }
 });

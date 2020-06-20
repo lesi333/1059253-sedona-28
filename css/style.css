@@ -438,17 +438,19 @@ p.about-city-grand {
 
 /* Main Index Button */
 
-.button {
+.interesting .button {
   width: 568px;
-  font: inherit;
   font-size: 21px;
+  line-height: 26px;
   font-weight: 700;
   color: var(--basic-white);
   background-color: var(--basic-light-brown);
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
+  padding: 30px 125px;
   border: none;
+  outline: none;
 }
 
 .button:hover,
@@ -487,6 +489,7 @@ p.about-city-grand {
 .form-error {
   animation: shake 0.6s;
 }
+
 /* Animations */
 
 @keyframes bounce {
@@ -549,13 +552,30 @@ p.about-city-grand {
   margin-left: 16px;
 }
 
+.search-person input {
+  width: 114px;
+  height: 38px;
+  text-align: center;
+  border: none;
+}
+
 .search-container input {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   background-color: var(--basic-light-gray);
-  border: none;
+  border: 2px solid transparent;
   margin-bottom: 29px;
+  outline: none;
+}
+
+.search-container input:hover {
+  background-color: var(--basic-gray);
+}
+
+.search-container input:focus {
+  background-color: var(--basic-white);
+  border: 2px solid var(--special-input-gray);
 }
 
 .search-container button.find {
@@ -569,6 +589,7 @@ p.about-city-grand {
   background-color: var(--basic-light-blue);
   color: var(--basic-white);
   border: none;
+  outline: none;
   padding: 16px 182px;
   margin-top: 25px;
 }
@@ -583,21 +604,6 @@ p.about-city-grand {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.search-container input:hover {
-  background-color: var(--basic-gray);
-}
-
-.search-container input:focus {
-  background-color: var(--basic-white);
-  border: 2px solid var(--special-input-gray);
-}
-
-.search-person input {
-  width: 114px;
-  height: 38px;
-  text-align: center;
-}
-
 .adult label {
   margin: 0;
   margin-right: 37px;
@@ -609,8 +615,9 @@ p.about-city-grand {
 }
 
 .search .calendar {
-  background-color: var(--basic-light-gray);
+  background-color: transparent;
   border: none;
+  outline: none;
 }
 
 .form-input {
@@ -636,6 +643,7 @@ p.about-city-grand {
 button.calendar:hover path,
 button.calendar:focus path {
   fill: var(--basic-black);
+  border: 0 solid var(--special-input-gray);
 }
 
 button.calendar:active path {
@@ -644,8 +652,9 @@ button.calendar:active path {
 
 .search .minus,
 .search .plus {
-  background-color: var(--basic-light-gray);
-  border: none;
+  background-color: transparent;
+  outline: none;
+  border: 0 solid transparent;
 }
 
 .form-adult {
@@ -747,11 +756,16 @@ button.plus:active path {
 
 .contact-social ul {
   display: flex;
-  justify-content: space-between;
-  width: 150px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 400px;
   margin: 0;  
   padding: 0;
   list-style: none;  
+}
+
+.social-list li:not(:last-child) {
+  margin-right: 6px;
 }
 
 .contact-social a.social-button {
@@ -976,6 +990,17 @@ a.developer-logo:active path {
   position: relative;
 }
 
+.filter-cost input {
+  width: 57px;
+  font-size: 14px;
+  line-height: 21px;  
+  font-weight: 400; 
+  color: var(--basic-white);
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
 .min-cost::after {
   position: absolute;
   content: " ";
@@ -988,12 +1013,16 @@ a.developer-logo:active path {
 
 .filter-cost .min-cost,
 .filter-cost .max-cost {
+  width: 90px;
+  padding-left: 52px; 
+}
+
+.range-filter label {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
   padding-top: 2.5px;
   padding-bottom: 4.5px; 
-  padding-left: 4px; 
 }
 
 .filter-cost .min-cost {
@@ -1005,7 +1034,7 @@ a.developer-logo:active path {
 }
 
 .cost-items .range-filter {
- width: 316px;
+  width: 316px;
 }
 
 .cost-items .range-cost {
@@ -1071,6 +1100,7 @@ a.developer-logo:active path {
   border: 2px solid var(--basic-white);
   border-radius: 2px;
   background-color: var(--basic-white);
+  outline: none;
 }
 
 /* Search */
@@ -1098,6 +1128,8 @@ a.developer-logo:active path {
 
 .results-list {
   display: flex;
+  flex-wrap: wrap;
+  width: 782px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -1120,13 +1152,11 @@ a.developer-logo:active path {
 
 .filter-up-down .up-down {
   display: flex;
-  justify-items: flex-end;
   align-self: center;
   margin: 0;
   padding: 0;
   list-style: none;
   padding-top: 32px;
-  margin-left: 503px;
 }
 
 .up-down li:nth-child(1) {
@@ -1188,7 +1218,7 @@ a.filter-down:active path {
 .results-list a.filter-type, 
 .results-list a.filter-rating {
   color: rgba(0, 0, 0, 0.3);
-  border-bottom: 1px dashed var(--basic-light-blue);
+  border-bottom: 1px dotted var(--basic-light-blue);
 }
 
 .results-list .active:hover,
@@ -1215,7 +1245,6 @@ a.filter-down:active path {
 .hotels-list .hotel-item {
   display: flex;
   align-items: center;
-
 }
 
 .hotels-list li.hotel-items-amara,
@@ -1392,4 +1421,3 @@ a.button-more {
   background-color: var(--basic-dark-brown);
   color: rgba(255, 255, 255, 0.3);
 }
-
