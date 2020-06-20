@@ -245,7 +245,8 @@ p.welcome-picture {
   font-size: 21px;
   font-weight: 700;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
+
 }
 
 .about-city-color p.life {
@@ -976,7 +977,7 @@ a.developer-logo:active path {
   font-weight: 700;
   line-height: 21px;
   margin: 0;
-  margin-bottom: 10.5px;
+  margin-bottom: 11.5px;
   padding-left: 1px;
 }
 
@@ -991,7 +992,7 @@ a.developer-logo:active path {
 }
 
 .filter-cost input {
-  width: 57px;
+  width: 60px;
   font-size: 14px;
   line-height: 21px;  
   font-weight: 400; 
@@ -1011,10 +1012,14 @@ a.developer-logo:active path {
   background-color: var(--basic-white);
 }
 
-.filter-cost .min-cost,
+.filter-cost .min-cost {
+  width: 90px;
+  padding-left: 53px; 
+}
+
 .filter-cost .max-cost {
   width: 90px;
-  padding-left: 52px; 
+  padding-left: 34px; 
 }
 
 .range-filter label {
@@ -1123,7 +1128,7 @@ a.developer-logo:active path {
 .results span {
   padding: 0;
   margin: 0;
-  padding-top: 31px;
+  padding-top: 32px;
 }
 
 .results-list {
