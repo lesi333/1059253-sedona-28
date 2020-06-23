@@ -1,5 +1,5 @@
 var link = document.querySelector(".search-button");
-var searchForm = document.querySelector(".search-form");
+var searchForm = document.querySelector(".search");
 var dateArrival = document.querySelector(".date-of-arrival");
 var dateDeparture = document.querySelector(".date-of-departure");
 var adult = searchForm.querySelector(".adult");
@@ -23,14 +23,7 @@ try {
 
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
-    if (searchForm.classList.contains("form-open")) {
-      searchForm.classList.add("search-hide");
-      searchForm.classList.remove("form-open");
-      searchForm.classList.remove("form-error");
-    } else {
-      searchForm.classList.add("form-open");
-      searchForm.classList.remove("search-hide");
-    };
+    searchForm.classList.toggle("search-hide");
     dateArrival.focus();
       if (adultItems) {
         adult.value = adultItems;
@@ -58,9 +51,8 @@ searchForm.addEventListener("submit", function (evt) {
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (searchForm.classList.contains("form-open")) {
+    if (!searchForm.classList.contains("search-hide")) {
       evt.preventDefault();
-      searchForm.classList.remove("form-open");
       searchForm.classList.add("search-hide");
       searchForm.classList.remove("form-error");
     }

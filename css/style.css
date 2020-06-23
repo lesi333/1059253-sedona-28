@@ -15,7 +15,7 @@
   --basic-gray: #EBEBEB;
   --basic-light-gray: #F2F2F2;
   --basic-natural: #EEEEEE;
-  --special-coll-blue:  E6F3FA;
+  --special-coll-blue: #C9DDE8;
   --special-dark-gray: #6A6A6A;
   --special-gray: #ABABAB;
   --special-black: #231F20;
@@ -246,7 +246,6 @@ p.welcome-picture {
   font-weight: 700;
   margin: 0 auto;
   margin-bottom: 27px;
-
 }
 
 .about-city-color p.life {
@@ -341,9 +340,9 @@ p.welcome-picture {
   margin-bottom: 25px;
   font-size: 21px;
   font-weight: 700;
- }
+}
 
- .about-city-not-color .square {
+.about-city-not-color .square {
   margin-bottom: 25px;
   width: 119px;
   margin-left: auto;
@@ -476,15 +475,11 @@ p.about-city-grand {
   margin-right: auto;
   position: absolute; 
   left: 316px;
+  animation: bounce 0.6s;
 }
 
 .search-hide {
   display: none;
-}
-
-.form-open {
-  display:block;
-  animation: bounce 0.6s;
 }
 
 .form-error {
@@ -873,6 +868,7 @@ a.developer-logo:active path {
   list-style: none;
 }
 
+
 .filter-items .infrastructure-items,
 .filter-items .housing-items,
 .filter-items .cost-items {
@@ -900,12 +896,13 @@ a.developer-logo:active path {
   line-height: 21px;
 }
 
-.housing-items label {
-  padding-left: 39px; 
+.infrastructure-item .filter-option,
+.housing-items .filter-option {
+  position: absolute;
 }
 
-.filter-option {
-  display: none;
+.housing-items label {
+  padding-left: 39px; 
 }
 
 .infrastructure-item label {
@@ -961,6 +958,10 @@ a.developer-logo:active path {
 .filter-option:disabled + label::before { 
   width: 27px; 
   background-image: url("../img/checkbox-off-disabled.svg");
+}
+
+.filter-option:focus + .filter-check::before {
+  outline: -webkit-focus-ring-color auto 1px;
 }
 
 .filter-items .infrastructure-items {
